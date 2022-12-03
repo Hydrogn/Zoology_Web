@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Noot";
+    src: url("./Noot/Noot.otf");
+}
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(./Bebas_Neue/BebasNeue-Regular.ttf);
+}
+.menu-text{
+    color: #643325 !important;
+    text-decoration: none;
+}
+
+.typeAnimal{
+    max-height: 100px;
+    max-width: 200px;
+}
