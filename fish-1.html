@@ -4,19 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>COMISHERS HCI</title>
+    <title>The Wonderful World of Zoology</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <style>
-        @font-face {
-            font-family: "Noot";
-            src: url("./Noot/Noot.otf");
-        }
-
-        @font-face {
-            font-family: "Bebas Neue";
-            src: url(./Bebas_Neue/BebasNeue-Regular.ttf);
-        }
-    </style>
 </head>
 
 <body style="height: 100%;width: 100%;background: url(&quot;assets/img/bg.png&quot;) center / cover no-repeat fixed;font-family: Noot;">
@@ -44,12 +33,12 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col text-center"><button class="btn btn-primary" type="button" style="background: #c85103;border-color: #c85103;">Catfish</button></div>
+                    <div class="col text-center"><button class="btn btn-primary" type="button" style="background: #c85103;border-color: #c85103;" onclick="this.disabled = true; let skor = sessionStorage.getItem(&quot;score&quot;); skor++; sessionStorage.setItem(&quot;score&quot;,skor);alert(&quot;Correct\nScore: &quot;+skor)">Catfish</button></div>
                     <div class="col text-center"><button class="btn btn-primary" type="button" style="background: #fbc02c;border-color: #fbc02c;color: var(--bs-btn-disabled-color);">Shark<br></button></div>
                     <div class="col text-center"><button class="btn btn-primary" type="button" style="background: #03989e;border-color: #03989e;">Eel<br></button></div>
                 </div>
                 <div class="row">
-                    <div class="col text-center"><button class="btn btn-primary" type="button" style="border-color: #643325;background: #643325;margin-top: 20px;">Next &gt;&gt;&gt;</button></div>
+                    <div class="col text-center"><button class="btn btn-primary" type="button" style="border-color: #643325;background: #643325;margin-top: 20px;" onclick="window.location.href=&quot;fish-2.html&quot;">Next &gt;&gt;&gt;</button></div>
                 </div>
             </div>
         </div>

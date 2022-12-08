@@ -4,19 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>COMISHERS HCI</title>
+    <title>The Wonderful World of Zoology</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <style>
-        @font-face {
-            font-family: "Noot";
-            src: url("./Noot/Noot.otf");
-        }
-
-        @font-face {
-            font-family: "Bebas Neue";
-            src: url(./Bebas_Neue/BebasNeue-Regular.ttf);
-        }
-    </style>
 </head>
 
 <body style="height: 100%;width: 100%;background: url(&quot;assets/img/bg.png&quot;) center / cover no-repeat fixed;font-family: Noot;">
@@ -34,22 +23,22 @@
         <div class="row">
             <div class="col-md-6 col-lg-4 offset-lg-2">
                 <div class="row">
-                    <div class="col offset-1 offset-sm-3 offset-xl-1 offset-xxl-3"><img src="assets/img/3.png"></div>
+                    <div class="col offset-1 offset-sm-3 offset-xl-1 offset-xxl-3"><img src="assets/img/6.png"></div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-5">
                 <div class="row">
                     <div class="col">
-                        <p class="fs-2 text-center"><strong><span style="color: rgb(34, 23, 22);">3. A reptile that has a shell covering its body and is known for moving very slowly?</span></strong><br></p>
+                        <p class="fs-2 text-center">4. _______ are reptiles that belong to a large family of lizards and are often seen sunning themselves on branches of overhanging water.</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col text-center"><button class="btn btn-primary" type="button" style="background: #c85103;border-color: #c85103;">Snakes</button></div>
-                    <div class="col text-center"><button class="btn btn-primary" type="button" style="background: #fbc02c;border-color: #fbc02c;">Iguanas<br></button></div>
-                    <div class="col text-center"><button class="btn btn-primary" type="button" style="background: #03989e;border-color: #03989e;">Turtles</button></div>
+                    <div class="col text-center"><button class="btn btn-primary" type="button" style="background: #c85103;border-color: #c85103;" onclick="this.disabled = true; let skor = sessionStorage.getItem(&quot;score&quot;); skor++; sessionStorage.setItem(&quot;score&quot;,skor);alert(&quot;Correct\nScore: &quot;+skor)">Iguanas</button></div>
+                    <div class="col text-center"><button class="btn btn-primary" type="button" style="background: #fbc02c;border-color: #fbc02c;">Skink<br></button></div>
+                    <div class="col text-center"><button class="btn btn-primary" type="button" style="background: #03989e;border-color: #03989e;">Lizards</button></div>
                 </div>
                 <div class="row">
-                    <div class="col text-center"><button class="btn btn-primary" type="button" style="border-color: #643325;background: #643325;margin-top: 20px;">Next &gt;&gt;&gt;</button></div>
+                    <div class="col text-center"><button class="btn btn-primary" type="button" style="border-color: #643325;background: #643325;margin-top: 20px;" onclick="window.location.href=&quot;reptile-5.html&quot;">Next &gt;&gt;&gt;</button></div>
                 </div>
             </div>
         </div>
