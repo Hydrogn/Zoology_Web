@@ -10,6 +10,7 @@
 body{
     overflow: hidden;
 }
+
 .menu-text{
     color: white !important;
     text-decoration: none;
@@ -27,7 +28,7 @@ body{
 
 .typeAnimal{
     max-height: 100px;
-    max-width: 200px;
+    max-width: 100%;
 }
 
 .w-65{
@@ -44,4 +45,22 @@ body{
 
 .w-60{
     width: 60%;
+}
+
+.buttonZzz:hover{
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1) !important;
+}
+
+.title{
+    border:none !important; border-radius: 30px !important; padding-top: 10px !important; background-color: #643325 !important;
+}
+
+.cHeader{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; border:none !important; font-size: 30px; color: white !important;
+}
+
+.card-img-top{
+    width: 100%;
+    height: 10vw;
+    object-fit: cover;
 }
