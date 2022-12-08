@@ -64,3 +64,15 @@ body{
     height: 10vw;
     object-fit: cover;
 }
+
+.sticky-image-wrapper{
+    position: fixed;
+    bottom: 10%;
+    width: 100%;
+}
+
+.sticky-image-wrapper a img{
+    display: table;
+    position: relative;
+    margin: auto;
+}

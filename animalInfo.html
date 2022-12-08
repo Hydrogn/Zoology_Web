@@ -35,9 +35,7 @@
         </div>
         <div class="container">
             <div class="row px-4 mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
-                <div class="col-1">
-                </div>
-                <div class="col-10 mb-3" id="animalName">
+                <div class="col-11 mb-3" id="animalName">
                 </div>
                 <div class="col-1">
                 </div>
@@ -50,10 +48,11 @@
                 </div>
 
                 <div class="col-10 d-flex">
-                    <div class="col-2 mx-auto mt-auto mb-auto" id="imgSection">
+                    <div class="col mx-auto mt-auto mb-auto" id="imgSection">
                         
                     </div>
-                    <div class="ms-5 ps-5 col-8">
+                    
+                    <div class="ms-5 ps-5 col-8 d-flex align-items-center justify-content-center">
                         <div class="card" style="width: 100%; background-color: #cf7549;">
                             <div class="card-body py-4" id="animalInfo">
                             
@@ -72,14 +71,18 @@
             </div>
             <div class="col-10 mt-4 pt-4">
                 <div class="text-center" style="margin-bottom: 50px;">
-                    <a onclick="history.back()" style="cursor:pointer;"> 
-                        <img src="../img/menu/goback.png" class="typeAnimal">
-                    </a>
+                    
                 </div>
             </div>
             <div class="col-1">
             </div>
         </div>
+
+        <div class="sticky-image-wrapper">
+            <a onclick="history.back()" style="cursor:pointer;"> 
+                <img src="../img/menu/goback.png" class="typeAnimal">
+            </a>
+         </di>
 
 
         <script>
@@ -89,11 +92,9 @@
                 img = sessionStorage["img"];
                 document.getElementById("animalName").innerHTML += `<span style="font-family: Noot; font-size: 45px; color: #643325; margin-right: 50px;"><u>${name}</u></span>`;
 
-                document.getElementById("imgSection").innerHTML += `<a href="#" style="text-decoration: none;">
-                        <img class="card-img-top" src="${img}" style="width: 100%; height: auto;">
-                </a>`;
+                document.getElementById("imgSection").innerHTML += `<img class="card-img-top" src="${img}" style="width: 100%; height: auto;">`;
 
-                document.getElementById("animalInfo").innerHTML += `<h5 class="card-text" style="color: white;">${info}</h5>`;
+                document.getElementById("animalInfo").innerHTML += `<h4 class="card-text" style="color: white;">${info}</h4>`;
             }
 
             lods();
