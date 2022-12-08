@@ -23,7 +23,7 @@
         <div class="row px-4 mx-auto d-flex align-items-center justify-content-center" style="width: 100%;">
             <div class="col-2">
             </div>
-            <div class="col-8 mt-5 pt-4 mb-4">
+            <div class="col-8 mt-2">
                 <div class="text-center" style="margin-bottom: 50px;">
                     <a id="whatever" class="px-4 btn btn-large btn-primary mx-auto text-center title mb-1">
                         <span class="display-5" style="font-family: Noot;">The Wonderful World of Zoology</span>
@@ -86,18 +86,19 @@
 
 
         <script>
-            function lods(){
+            function getSession(){
                 name = sessionStorage["name"];
                 info = sessionStorage["info"];
                 img = sessionStorage["img"];
-                document.getElementById("animalName").innerHTML += `<span style="font-family: Noot; font-size: 45px; color: #643325; margin-right: 50px;"><u>${name}</u></span>`;
+                document.getElementById("animalName").innerHTML += `<span style="font-family: Noot;
+                font-size: 45px; color: #643325; margin-right: 50px;"><u>${name}</u></span>`;
 
                 document.getElementById("imgSection").innerHTML += `<img class="card-img-top" src="${img}" style="width: 100%; height: auto;">`;
 
-                document.getElementById("animalInfo").innerHTML += `<h4 class="card-text" style="color: white;">${info}</h4>`;
+                document.getElementById("animalInfo").innerHTML += `<span class="card-text" style="color: white; font-size: 20px;">${info}</span>`;
             }
 
-            lods();
+            getSession();
         </script>
     </body>
 </html>
